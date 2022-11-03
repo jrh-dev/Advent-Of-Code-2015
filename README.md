@@ -1,4 +1,4 @@
-# Advent Of Code 2015 - So
+# Advent Of Code 2015 - Solutions
 Advent of Code is a series of programming puzzles released in December each year that can be solved in any programming language. Correctly solving all of the puzzles earns 50 stars.
 
 ### Current Total Stars
@@ -6,8 +6,8 @@ Advent of Code is a series of programming puzzles released in December each year
 
 | Puzzle | Python | R |
 |--------|--------|---|
-| Day 1 | :star: :star: | :star: :star: |
-| Day 2 | :star: :star: | :star: :star: |
+| Day 1 | | :star: :star: |
+| Day 2 | | :star: :star: |
 | Day 3 |  |  |
 | Day 4 |  |  |
 | Day 5 |  |  | 
