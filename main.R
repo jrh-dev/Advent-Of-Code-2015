@@ -29,3 +29,7 @@ R$d04$day_04(d04_dat, 5)
 R$d04$day_04(d04_dat, 6)
 
 d05_dat <- readLines("Data/d05.txt", warn = FALSE)
+
+R$d05$day_05_p1(d05_dat)
+
+R$d05$day_05_p2(d05_dat)

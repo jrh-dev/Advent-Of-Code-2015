@@ -34,11 +34,6 @@ day_05_p2 = function(x) return(sum(sapply(x, ._validate_2)))
   return(cond)
 }
 
-
-day_05_p1(x=d05_dat)
-day_05_p2(x="qjhvhtzxzqqjkmpb")# not correct
-
-
 ._test_4 = function(x) {
   
   len = length(x)
@@ -52,9 +47,16 @@ day_05_p2(x="qjhvhtzxzqqjkmpb")# not correct
   
   flagged = names(which(table(catch) > 1))
   
-  w = which(x == substr(flagged,1,1) | x == substr(flagged,2,2) )
+  wt = NULL
   
-  if (length(w)) {
+  for (ii in length(flagged)) {
+    f = flagged[ii]
+    w = which(x == substr(f,1,1) | x == substr(f,2,2))
+    wt = c(wt, w) # memory inefficient
+  }
+  
+  
+  if (length(w)>0) {
     res = length(w[sapply(w, function(x) (x-1) %in% w | (x+1) %in% w)]) >= 4
   } else {
     res = 0
